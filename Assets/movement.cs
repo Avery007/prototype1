@@ -16,23 +16,23 @@ public class movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
-            this.transform.position= this.transform.position+ new Vector3(1.0f,0,0);
+            this.transform.position= this.transform.position+ new Vector3(0.5f,0,0);
 
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            this.transform.position = this.transform.position - new Vector3(1.0f, 0, 0);
+            this.transform.position = this.transform.position - new Vector3(0.5f, 0, 0);
         }
 
         if (Input.GetKey(KeyCode.W))
         {
-            this.transform.position = this.transform.position + new Vector3(0, 0, 1.0f);
+            this.transform.position = this.transform.position + new Vector3(0, 0, 0.5f);
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            this.transform.position = this.transform.position - new Vector3(0, 0, 1.0f);
+            this.transform.position = this.transform.position - new Vector3(0, 0, 0.5f);
         }
 
    
