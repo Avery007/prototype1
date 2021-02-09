@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-    
+    public Vector3 rotatingL = new Vector3(0, 1.0f, 0);
+    public Vector3 rotatingR = new Vector3(0, -1.0f, 0);
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +37,15 @@ public class movement : MonoBehaviour
             this.transform.position = this.transform.position - new Vector3(0, 0, 0.5f);
         }
 
-   
+        if (Input.GetKey(KeyCode.Q))
+        {
+            this.GetComponent<Transform>().Rotate(rotatingL);
+        }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            this.GetComponent<Transform>().Rotate(rotatingR);
+        }
 
 
 
