@@ -14,11 +14,16 @@ public class movement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.D))
         {
-            this.transform.position= this.transform.position+ new Vector3(0.5f,0,0);
+            Vector3 change = this.transform.TransformVector(0.005f, 0, 0);
+
+            this.transform.position= this.transform.position+ change;
+            //transform.TransformPoint(vector);
+            //this.transform.TransformPoint(new Vector3(0.5f, 0, 0));
+
 
         }
 

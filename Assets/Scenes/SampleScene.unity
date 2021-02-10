@@ -821,6 +821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Capsule (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5577804513975220691, guid: 3428f457b07d74d4a9e9e605192c1262, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1286452041}
     - target: {fileID: 5577804513975220695, guid: 3428f457b07d74d4a9e9e605192c1262, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1321,7 +1325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.58424807, y: -0, z: -0, w: 0.8115751}
-  m_LocalPosition: {x: 0.0020000013, y: 0.32271206, z: -0.15400004}
+  m_LocalPosition: {x: 0.18014406, y: 0.3227121, z: -0.09813989}
   m_LocalScale: {x: 0.011051783, y: 0.011051782, z: 0.011051782}
   m_Children: []
   m_Father: {fileID: 1286452045}
@@ -1633,9 +1637,9 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &1286452047
 CapsuleCollider:
@@ -1658,7 +1662,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286452041}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a5bd870a534c904db7d480dcc964080, type: 3}
   m_Name: 
@@ -2698,6 +2702,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1286452041}
+    - target: {fileID: 5577804513975220691, guid: 3428f457b07d74d4a9e9e605192c1262, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5577804513975220695, guid: 3428f457b07d74d4a9e9e605192c1262, type: 3}
       propertyPath: m_RootOrder
       value: 8

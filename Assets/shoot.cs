@@ -9,11 +9,12 @@ public class shoot : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("check");
         if (collision.collider.gameObject == player)
         {
             Debug.Log("detection");
-            Vector3 force = new Vector3(100, 0, 0);
-            player.GetComponent<Rigidbody>().AddForce(force);
+            Vector3 force = new Vector3(100, 0, 100);
+            player.GetComponent<Transform>().position = force;
         }
     }
         void Start()
